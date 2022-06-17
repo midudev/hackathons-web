@@ -1,0 +1,30 @@
+---
+import Button from '../components/Button.astro';
+---
+
+<div class='max-w-6xl mx-auto mt-24 mb-96'>
+  <section class='max-w-3xl px-10 mx-auto'>
+    <h2 class="font-extrabold text-4xl leading-none">
+      <img class="inline-block w-12 h-12" src="./star-struck.svg" />¡No te pierdas la próxima hackathon!
+    </h2>
+
+    <p class="text-gray-500 mt-4">
+      ¡Deja tu correo y te enviaré un aviso cuando el próximo reto de programación esté disponible!
+    </p>
+
+    <form class='pt-4 block'>
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <input
+          class="bg-white appearance-none border-2 border-blue-100 rounded w-full flex-grow-0 py-2 px-4 text-gray-700 leading-tight sm:flex-1 focus:outline-none focus:bg-white focus:border-blue-400"
+          id="email"
+          type="email"
+          placeholder="Correo electrónico"
+          required
+        />
+        <div class='w-full sm:w-auto'>
+          <Button variant="secondary">¡Envíame un aviso!</Button>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>

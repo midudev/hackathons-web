@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBanner from '../components/TopBanner.astro';
+import Hero from '../components/Hero.astro'
+import Header from '../components/Header.astro'
+import Sponsors from '../components/Sponsors.astro'
+import Form from '../components/Form.astro'
+---
+
+<Layout description="Sitio web con todos los retos de programación de midudev" title="Mejora en programación creando proyectos">
+
+	<section class="h-auto bg-white overflow-hidden pb-20">
+		<TopBanner>
+			<span class="md:-ml-10">
+				<span class="md:inline mr-1 hidden">
+					¡No te pierdas los directos en Twitch!
+				</span><a class="underline" href='https://twitch.tv/midudev'>twitch.tv/midudev</a>
+			</span>
+		</TopBanner>
+
+		<Header />
+		<Hero />
+		<Sponsors />
+		<Form />
+		
+	</section>
+
+</Layout>

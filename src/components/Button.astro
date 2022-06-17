@@ -1,0 +1,17 @@
+---
+export interface Props {
+  variant?: "primary" | "secondary"
+}
+
+const BUTTON_COLORS = {
+  primary: "text-white bg-gray-900 hover:bg-black hover:text-white",
+  secondary: "text-gray-600 bg-gray-100 hover:bg-gray-200 hover:text-black"
+}
+
+const { variant = "primary" } = Astro.props as Props
+const classes = BUTTON_COLORS[variant] || BUTTON_COLORS.primary
+--- 
+
+<button class={`inline-block w-full px-5 py-3 mb-3 mr-1 text-base font-semibold no-underline align-middle border border-transparent border-solid rounded-full cursor-pointer select-none sm:mb-0 sm:w-auto ${classes}`}>
+  <slot></slot>
+</button>

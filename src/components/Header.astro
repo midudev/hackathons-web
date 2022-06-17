@@ -1,0 +1,16 @@
+---
+import {LoginButton} from '../components/LoginButton';
+---
+
+<div class="max-w-6xl mx-auto xl:px-0 px-10 w-full relative z-20 flex justify-between h-20 items-center">
+  <div class="relative flex pr-10 flex-col">
+    <a href="/" class="flex text-lg leading-none font-black hover:opacity-70 items-center"><img class="w-6 h-6 object-contain" src='/favicon.svg'>hackathons</a>
+    <small class="flex items-center text-[8px] font-bold pl-1 -mt-1 opacity-90">por <a class='hover:opacity-70' href='https://midu.dev'>
+        <img class="pl-0.5 w-16 h-auto object-contain" alt='logo de midudev' src='logo.png' /></a>
+    </small>
+  </div>
+
+  <div class="relative flex space-x-5 font-medium">
+    <LoginButton client:visible />
+  </div>
+</div>
