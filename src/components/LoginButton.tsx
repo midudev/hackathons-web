@@ -66,8 +66,6 @@ export function LoginButton () {
     if (error) console.error(error)
   }
 
-  console.log(user)
-
   if (user === undefined) return <div />
   if (user !== null) {
     return (
