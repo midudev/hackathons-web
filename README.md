@@ -48,6 +48,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 3. ```cd hackathons-web```
 4. ```npm install```
 5. Create new organization and project in [Supabase](https://docs.astro.build) to get credentials to add in your .env.local file.
-6. Rename ```.env.example``` file to ```.env.local``` in the root folder.
-7. Assign Supabase Credentials into ```.env.local``` variables.
+6. Rename ```.env.example``` file to ```.env``` in the root folder.
+7. Assign Supabase Credentials into ```.env``` variables.
 8. ```npm run dev```
