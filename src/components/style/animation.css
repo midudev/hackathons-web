@@ -1,0 +1,25 @@
+@keyframes floating {
+    0%   {transform: translate(-3px, -11px);}
+    25%  {transform: translate(-2px,  10px);}
+    50%  {transform: translate( 3px,  -8px);}
+    75%  {transform: translate( 2px,   6px);}
+    100% {transform: translate(-3px, -11px);}
+}
+
+@keyframes moving {
+    0%   {transform: translateX( 14px) scale(0.9, 1);}
+    25%  {transform: translateX( 13px) scale(1);}
+    50%  {transform: translateX( 20px) scale(0.9, 1);}
+    75%  {transform: translateX( 19px) scale(1);}
+    100% {transform: translateX( 14px) scale(0.9, 1);}
+}
+
+.hero_animation {
+    animation: floating 6s infinite ease-in-out;
+}
+
+.blackhole {
+    margin: 20px;
+    width: 140px;
+    animation: moving 6s infinite ease-in-out;
+}
