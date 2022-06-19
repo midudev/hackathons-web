@@ -1,5 +1,6 @@
 ---
 import Button from '@components/Button.astro';
+import './style/animation.css';
 ---
 
 <div
@@ -23,7 +24,8 @@ import Button from '@components/Button.astro';
     </div>
   </div>
 
-  <div class="lg:w-1/2 w-full lg:max-w-none max-w-md lg:pt-0 pt-20 mx-auto lg:pl-20">
-    <img src="/landing.png" class="w-full h-auto">
+  <div class="lg:w-1/2 w-full lg:max-w-none max-w-md lg:pt-0 pt-20 mx-auto lg:pl-20 grid place-items-center">
+    <img src="/floating.png" class="w-full h-auto hero_animation">
+    <img src="/shadow.png" class="blackhole">
   </div>
 </div>
