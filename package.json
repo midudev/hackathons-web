@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "phoenix": "rm -rf ./node_modules && npm install --no-audit --no-fund",
     "preview": "astro preview",
     "lint": "standard"
   },
@@ -14,7 +15,7 @@
     "@astrojs/tailwind": "0.2.1",
     "astro": "1.0.0-beta.47",
     "preact": "10.8.1",
-    "standard": "^17.0.0"
+    "standard": "17.0.0"
   },
   "dependencies": {
     "@supabase/supabase-js": "1.35.3",
