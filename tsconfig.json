@@ -5,6 +5,7 @@
     "module": "ESNext",
     // Enable node-style module resolution, for things like npm package imports.
     "moduleResolution": "node",
+    "removeComments": true,
     // Enable JSON imports.
     "resolveJsonModule": true,
     // Enable stricter transpilation for better output.
